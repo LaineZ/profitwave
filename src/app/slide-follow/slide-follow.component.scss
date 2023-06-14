@@ -1,0 +1,49 @@
+main {
+    background: radial-gradient(circle at 100% 0%, #75102d 1vw, #0F0F0F 22vw);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    min-height: 1000px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4vh;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2vh;
+    margin-top: 10px;
+    color: var(--accent);
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: var(--fg);
+    background-color: var(--accent);
+}
+
+.content {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: center;
+
+    p {
+        font-size: 1vw;
+    }
+}

@@ -1,0 +1,45 @@
+main {
+    padding-left: 15vw;
+    background: radial-gradient(circle at 100% 100%, #75102d 10px, #0F0F0F 22vw);
+    height: 100vh;
+    min-height: 1000px;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+img {
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+.description {
+    width: 50%;
+    margin-bottom: 4vh;
+    z-index: 2;
+    position: relative;
+    font-size: 1.3vw;
+}
+
+button {
+    background-color: var(--accent);
+    border: none;
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2vh;
+    color: var(--fg);
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 50px;
+    }
+}

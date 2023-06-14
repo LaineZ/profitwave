@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --bg: #0f0f0f;
+    --bg2: #8e8e8e;
+    --fg: #ffffff;
+    --accent: #f0205b; 
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: Montserrat, sans-serif;
+}
