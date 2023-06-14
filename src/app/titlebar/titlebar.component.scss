@@ -1,17 +1,15 @@
 .app-titlebar {
     display: flex;
-    margin-top: 5%;
-    font-size: 1vw;
 }
 
 .title {
-    margin-right: 1.2vw;
+    margin-right: 50px;
     color: var(--fg);
     font-weight: 400;
 }
 
 h3 {
-    margin-right: 1vw;
+    margin-right: 20px;
     color: var(--bg2);
     font-weight: 400;
 }

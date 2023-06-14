@@ -1,14 +1,12 @@
 main {
-    background: radial-gradient(circle at 100% 0%, #75102d 1vw, #0F0F0F 22vw);
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    background: radial-gradient(circle at 100% 0%, #75102d 2vw, #0F0F0F 22vw);
     min-height: 1000px;
 }
 
 h1 {
     padding: 0;
     margin: 0;
-    font-size: 4vh;
+    font-size: 50px;
 }
 
 img {
@@ -39,11 +37,12 @@ button:hover {
 }
 
 .content {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
     text-align: center;
 
     p {
-        font-size: 1vw;
+        font-size: 20px;
     }
 }
