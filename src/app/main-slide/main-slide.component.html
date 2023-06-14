@@ -1,8 +1,8 @@
 <main (mousemove)="onMouseMove($event)">
     <div class="content">
         <app-titlebar></app-titlebar>
-        <img src="../../assets/images/main-slide-rocket.png" [style.top.px]="imageRocketTop">
-        <img src="../../assets/images/main-slide-balls.png" [style.top.px]="imageBallsTop">
+        <img src="../../assets/images/main-slide-rocket.png" [style.transform]="'translate(0px, ' + imageRocketY + 'px)'">
+        <img src="../../assets/images/main-slide-balls.png" [style.transform]="'translate(' + imageBallsX + 'px, ' + imageBallsY + 'px)'">
         <div class="description">
             <h1>Employ Copy Trading With The Pro Team on TraderWagon</h1>
             <p>
