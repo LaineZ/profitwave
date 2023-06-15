@@ -1,0 +1,36 @@
+.step {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-height: 450px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.step-desc {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-weight: 300;
+}
+
+.step-ballon {
+    margin-right: 20px;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: bold;
+    line-height: 32px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}

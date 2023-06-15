@@ -1,7 +1,17 @@
 <main>
     <div class="content">
-        <img class="logos" src="../../assets/images/company-logos.png">
-        <p>Anyone in TraderWagon can trade like a top trader</p>
-        <h1>How to Copy Trades on Binance with Mini Program?</h1>
+        <div class="header-content">
+            <img class="logos" src="../../assets/images/company-logos.png">
+            <p>Anyone in TraderWagon can trade like a top trader</p>
+            <h1>How to Copy Trades on Binance with Mini Program?</h1>
+        </div>
+        <div class="steps">
+            <app-instruction [image]="'../../assets/images/step-one-screenshot.png'"
+                [stepDescription]="'Go to Binance Marketplace & Select TraderWagon'" [stepNumber]="1"></app-instruction>
+            <app-instruction [image]="'../../assets/images/step-two-screenshot.png'"
+                [stepDescription]="'Browse & Find my Portfolio to Invest in'" [stepNumber]="2"></app-instruction>
+            <app-instruction [image]="'../../assets/images/step-three-screenshot.png'"
+                [stepDescription]="'Sign up with Binance & Set up TraderWagon Account'" [stepNumber]="3"></app-instruction>
+        </div>
     </div>
 </main>
