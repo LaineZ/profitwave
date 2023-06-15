@@ -25,6 +25,18 @@ main {
     }
 }
 
+.redirect {
+    background-image: url("../../assets/images/arrows.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 170px;
+
+    button {
+        margin-top: 100px;
+    }
+}
+
 .logos {
     width: 50%;
 }

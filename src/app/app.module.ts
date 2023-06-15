@@ -11,6 +11,9 @@ import { SlideRoiComponent } from './slide-roi/slide-roi.component';
 import { GuaranteedRoiComponent } from './guaranteed-roi/guaranteed-roi.component';
 import { MinimumDrawdownComponent } from './minimum-drawdown/minimum-drawdown.component';
 import { RocketComponent } from './rocket/rocket.component';
+import { SlideSubscribeComponent } from './slide-subscribe/slide-subscribe.component';
+import { OutlineButtonComponent } from './outline-button/outline-button.component';
+import { CryptoscrollComponent } from './cryptoscroll/cryptoscroll.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { RocketComponent } from './rocket/rocket.component';
     GuaranteedRoiComponent,
     MinimumDrawdownComponent,
     RocketComponent,
+    SlideSubscribeComponent,
+    OutlineButtonComponent,
+    CryptoscrollComponent,
   ],
   imports: [
     BrowserModule
