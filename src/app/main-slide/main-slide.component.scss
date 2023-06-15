@@ -1,28 +1,15 @@
 main {
     background: radial-gradient(circle at 100% 100%, #75102d 2vw, #0F0F0F 22vw);
     height: 100vh;
-    max-height: 1000px;
+    max-height: 1080px;
 }
 
 h1 {
     font-size: 64px;
 }
 
-img {
-    position: absolute;
-    height: 100vh;
-    max-height: 1000px;
-    top: 0px;
-    right: 0px;
-    z-index: 0;
-
-    @media (min-width: 2500px) {
-        right: 20%;
-    }
-}
-
 .description {
-    width: 50%;
+    width: 60%;
     margin-bottom: 50px;
     z-index: 2;
     position: relative;
@@ -34,6 +21,11 @@ img {
     margin-right: auto;
     max-width: 1400px;
     overflow-x: hidden;
+
+    @media (max-width: 1400px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 button {
