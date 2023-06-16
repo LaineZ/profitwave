@@ -1,10 +1,14 @@
 main {
   position: relative;
   height: fit-content;
-  width: 400px;
+  width: 30%;
   margin-top: 35px;
   padding: 10px;
-  z-index: 2;
+  z-index: 0;
+
+  @media (max-width: 1070px) {
+    width: 35%;
+  }
 }
 
 main::before {
@@ -19,7 +23,7 @@ main::before {
     inset 20px 20px 100px var(--bg),
     inset -20px -20px 100px var(--bg),
     inset 0px 0px 20px 20px var(--bg);
-  z-index: 2;
+  z-index: 1;
 }
 
 .container {

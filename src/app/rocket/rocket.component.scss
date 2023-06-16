@@ -1,27 +1,30 @@
-.balls {
+.component {
     position: absolute;
-    height: 100vh;
+    width: 50vw;
     max-height: 1080px;
     top: 0px;
     right: 0px;
-    z-index: 0;
+    z-index: 2;
 
     @media (min-width: 2500px) {
         right: 25vw;
     }
+
+    @media (max-width: 1070px) {
+        width: 70vw;
+        top: unset;
+        bottom: -30px;
+    }
+
+}
+
+.balls {
     transition: transform 33ms;
+    @media (max-width: 1070px) {
+        right: -20px;
+    }
 }
 
 .rocket {
-    position: absolute;
-    height: 100vh;
-    max-height: 1080px;
-    top: 0px;
-    right: 0px;
-    z-index: 0;
-
-    @media (min-width: 2500px) {
-        right: 25vw;
-    }
     transition: transform 100ms;
 }
