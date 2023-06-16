@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-slide-subscribe',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./slide-subscribe.component.scss']
 })
 export class SlideSubscribeComponent {
+  public backgroundPosition: string = '0% 5%, 100% 100%';
+  private scrollSpeed: number = 20;
 
+  @HostListener('window:scroll', ['$event']) onScroll(event: Event) {
+    const scrollPosition = window.scrollY;
+    this.backgroundPosition = `0% calc(30% - ${scrollPosition / this.scrollSpeed}px), 100% calc(60% + ${scrollPosition / this.scrollSpeed}px)`;
+  }
 }

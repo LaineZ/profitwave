@@ -10,7 +10,7 @@ main {
 main::before {
   content: "";
   position: absolute;
-  /* Добавьте это свойство */
+  border-radius: 20px;
   top: 0;
   left: 0;
   right: 0;
@@ -30,15 +30,15 @@ main::before {
 }
 
 .container.fast div {
-  animation: slide 8s linear infinite;
+  animation: slide 30s linear reverse infinite;
 }
 
 .container.mid div {
-  animation: slide 10s linear infinite;
+  animation: slide 40s linear infinite;
 }
 
 .container.slow div {
-  animation: slide 20s linear infinite;
+  animation: slide 60s linear reverse infinite;
 }
 
 .tether {
