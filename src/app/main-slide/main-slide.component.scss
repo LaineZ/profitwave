@@ -3,7 +3,7 @@
 main {
     background: radial-gradient(circle at 100% 100%, #75102d 2vw, #0F0F0F 22vw);
     height: 100vh;
-    min-height: 860px;
+    min-height: 980px;
     max-height: 1080px;
 
     @media (max-width: 1070px) {
@@ -20,8 +20,6 @@ h1 {
 }
 
 .description {
-    border-radius: 50px;
-    background-color: #0f0f0f94;
     width: 60%;
     margin-bottom: 50px;
     z-index: 4;
@@ -36,6 +34,10 @@ h1 {
     @include g.slide-container;
     margin-top: 40px;
     overflow-x: hidden;
+
+    @media (max-width: 1280px) {
+        margin-top: 10px;
+    }
 }
 
 .button {

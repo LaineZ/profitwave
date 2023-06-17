@@ -5,9 +5,10 @@ main {
   margin-top: 35px;
   padding: 10px;
   z-index: 0;
+  max-width: 400px;
 
   @media (max-width: 1070px) {
-    width: 40%;
+    width: 50%;
   }
 }
 
