@@ -1,19 +1,39 @@
 main {
     background: radial-gradient(circle at 100% 0%, #75102d 2vw, #0F0F0F 22vw);
     min-height: 1000px;
+
+    @media (max-width: 1070px) {
+        background: radial-gradient(circle at 50% 100%, #75102d 2vw, #00000000 30vw), radial-gradient(circle at 100% 0%, #75102d 2vw, #00000000 50vw);
+    }
 }
 
-h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 50px;
-}
-
-img {
+.slide-image {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
     display: block;
     margin-top: 4vh;
     margin-bottom: 4vh;
+
+    @media (max-width: 1070px) {
+        margin-left: -5%;
+        margin-bottom: 10%;
+    }
+}
+
+.logos {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    display: block;
+    text-align: center;
+
+    @media (max-width: 1070px) {
+        width: 80%;
+    }
 }
 
 .content {
@@ -26,8 +46,23 @@ img {
         font-size: 20px;
     }
 
+
+    @media (max-width: 1070px) {
+        text-align: unset;
+        max-width: 600px;
+
+        p {
+            font-size: unset;
+            line-height: 1.5;
+        }
+    }
+
+    @media (max-width: 800px) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     @media (max-width: 1400px) {
-        margin-left: 20px;
-        margin-right: 20px;
+        max-width: 1000px;
     }
 }

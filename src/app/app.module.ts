@@ -14,6 +14,7 @@ import { RocketComponent } from './rocket/rocket.component';
 import { SlideSubscribeComponent } from './slide-subscribe/slide-subscribe.component';
 import { OutlineButtonComponent } from './outline-button/outline-button.component';
 import { CryptoscrollComponent } from './cryptoscroll/cryptoscroll.component';
+import { FollowHeaderComponent } from './follow-header/follow-header.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CryptoscrollComponent } from './cryptoscroll/cryptoscroll.component';
     SlideSubscribeComponent,
     OutlineButtonComponent,
     CryptoscrollComponent,
+    FollowHeaderComponent,
   ],
   imports: [
     BrowserModule

@@ -1,12 +1,24 @@
 main {
-    background: radial-gradient(circle at 0% 100%, #75102d 2vw, #0F0F0F 22vw);
+    background: radial-gradient(circle at 0% 100%, #75102d 2vw, #00000000 22vw);
     min-height: 1000px;
+
+    @media (max-width: 1070px) {
+        background: radial-gradient(circle at 50% 0%, #75102d 2vw, #00000000 30vw), radial-gradient(circle at 0% 100%, #75102d 2vw, #00000000 22vw);
+    }
 }
 
 .header-content {
     text-align: center;
+    padding-top: 10%;
     h1 {
         font-size: 56px;
+        @media (max-width: 1070px) {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 1070px) {
+        margin-bottom: 10%;
     }
 }
 
@@ -17,6 +29,10 @@ main {
 
     p {
         font-size: 20px;
+        @media (max-width: 1070px) {
+            margin-top: 0;
+            font-size: unset;
+        }
     }
 
     @media (max-width: 1400px) {
@@ -35,10 +51,6 @@ main {
     button {
         margin-top: 100px;
     }
-}
-
-.logos {
-    width: 50%;
 }
 
 .steps {
