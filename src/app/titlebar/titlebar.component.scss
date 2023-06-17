@@ -1,11 +1,19 @@
 .app-titlebar {
     display: flex;
+    
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 .title {
-    margin-right: 50px;
+    margin-right: 5vw;
     color: var(--fg);
     font-weight: 400;
+}
+
+.hastags {
+    display: flex;
 }
 
 h3 {

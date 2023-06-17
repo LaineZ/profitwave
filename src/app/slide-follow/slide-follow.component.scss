@@ -1,9 +1,11 @@
+@use "../../styles.scss" as g;
+
 main {
     background: radial-gradient(circle at 100% 0%, #75102d 2vw, #0F0F0F 22vw);
     min-height: 1000px;
 
     @media (max-width: 1070px) {
-        background: radial-gradient(circle at 50% 100%, #75102d 2vw, #00000000 30vw), radial-gradient(circle at 100% 0%, #75102d 2vw, #00000000 50vw);
+        background: radial-gradient(circle at 50% 100%, #75102d 2vw, #00000000 50vw), radial-gradient(circle at 100% 0%, #75102d 2vw, #00000000 50vw);
     }
 }
 
@@ -26,7 +28,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
     width: 50%;
     display: block;
     text-align: center;
@@ -37,15 +38,12 @@ main {
 }
 
 .content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
+    @include g.slide-container;
     text-align: center;
 
     p {
         font-size: 20px;
     }
-
 
     @media (max-width: 1070px) {
         text-align: unset;
@@ -55,14 +53,5 @@ main {
             font-size: unset;
             line-height: 1.5;
         }
-    }
-
-    @media (max-width: 800px) {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    @media (max-width: 1400px) {
-        max-width: 1000px;
     }
 }

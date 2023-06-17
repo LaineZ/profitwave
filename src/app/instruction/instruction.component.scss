@@ -12,6 +12,17 @@
     p {
         font-size: 20px;
     }
+
+    @media (max-width: 1070px) {
+        flex-direction: column-reverse;
+        img {
+            max-width: 400px;
+        }
+
+        p {
+            font-size: unset;
+        }
+    }
 }
 
 .step-desc {
@@ -19,6 +30,10 @@
     align-items: center;
     width: 80%;
     font-weight: 300;
+
+    @media (max-width: 1070px) {
+        width: 50%;
+    }
 }
 
 .step-ballon {
