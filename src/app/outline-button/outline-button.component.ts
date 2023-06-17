@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-outline-button',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./outline-button.component.scss']
 })
 export class OutlineButtonComponent {
-
+  @Input() href: string = "";
 }
