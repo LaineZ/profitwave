@@ -21,9 +21,6 @@
 
 .balls {
     transition: transform 33ms;
-    @media (max-width: 1070px) {
-        right: -20px;
-    }
 }
 
 .rocket {
