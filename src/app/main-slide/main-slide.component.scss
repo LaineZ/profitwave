@@ -47,4 +47,11 @@ button {
     color: var(--fg);
     font-family: Montserrat, sans-serif;
     font-weight: bold;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: var(--fg);
+    color: var(--bg);
+    transition: all 0.5s;
 }
