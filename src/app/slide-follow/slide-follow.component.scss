@@ -5,7 +5,7 @@ main {
     min-height: 1000px;
 
     @media (max-width: 1070px) {
-        background: radial-gradient(circle at 50% 100%, #75102d 2vw, #00000000 50vw), radial-gradient(circle at 100% 0%, #75102d 2vw, #00000000 50vw);
+        background: radial-gradient(circle at 50% 100%, #75102d 2vw, #00000000 50vw), radial-gradient(circle at 100% 0%, #75102d 2vw, #00000000 95vw);
     }
 }
 
