@@ -60,6 +60,14 @@ img {
             font-size: unset;
         }
     }
+
+    @media (max-width: 700px) {
+        max-width: 350px;
+
+        p {
+            font-size: unset;
+        }
+    }
 }
 
 .block {

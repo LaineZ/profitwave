@@ -24,6 +24,10 @@ main {
             margin-top: 0;
         }
     }
+
+    @media (max-width: 700px) {
+        margin-bottom: 0;
+    }
 }
 
 .content {
@@ -47,8 +51,15 @@ main {
     background-position: center;
     height: 170px;
 
-    button {
-        margin-top: 100px;
+    @media (max-width: 810px) {
+        font-size: 25px;
+        font-weight: bold;
+        height: 190px;
+    }
+
+    @media (max-width: 700px) {
+        font-size: 18px;
+        height: 220px;
     }
 }
 
