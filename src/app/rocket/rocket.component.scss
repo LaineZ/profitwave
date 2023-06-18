@@ -22,6 +22,7 @@
     @media (min-width: 2500px) {
         background-position: 65% 0%, 100%, 100%;
     }
+    pointer-events: none;
 }
 
 .background-balls-wrapper {
@@ -46,4 +47,5 @@
     @media (min-width: 2500px) {
         background-position: 65% 0%;
     }
+    pointer-events: none;
 }
