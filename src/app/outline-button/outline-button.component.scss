@@ -18,10 +18,18 @@
 
     @media (max-width: 1070px) {
         border: 4px solid var(--accent);
-        font-size: 4.5vw;
+        font-size: 30px;
         min-width: unset;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 10px;
     }
 }
 

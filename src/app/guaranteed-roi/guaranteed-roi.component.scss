@@ -59,4 +59,10 @@
 .text-information {
     max-width: 600px;
     margin-left: 20px;
+
+    
+    @media (max-width: 1070px) {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
