@@ -12,7 +12,11 @@ h1 {
     font-size: 64px;
 
     @media (max-width: 1280px) {
-        font-size: 5.2vw;
+        font-size: 6vh;
+    }
+
+    @media (max-width: 700px) {
+        font-size: 35px;
     }
 }
 
@@ -22,8 +26,17 @@ h1 {
     z-index: 4;
     position: relative;
 
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         width: 100%;
+        p {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 800px) {
+        p {
+            width: 100%;
+        }
     }
 }
 

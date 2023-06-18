@@ -21,7 +21,6 @@ h2 {
 }
 
 .content-mobile {
-    margin-top: 30%;
     display: none;
     width: 100%;
     min-height: 50vh;
@@ -33,6 +32,10 @@ h2 {
 
     @media (max-width: 900px) {
         display: flex;
+    }
+
+    @media (max-width: 700px) {
+        margin-top: 30%;
     }
 
     .text-information {

@@ -2,7 +2,11 @@ main {
     background: radial-gradient(circle at 0% 0%, #75102d 2vw, #0F0F0F 22vw);
 
     @media (max-width: 900px) {
-        background: radial-gradient(circle at 10% 40%, #75102d 2vw, #0F0F0F 60vw);
+        background: radial-gradient(circle at 0% 20%, #75102d 2vw, #0F0F0F 17%);
+    }
+
+    @media (max-width: 700px) {
+        background: radial-gradient(circle at 0% 30%, #75102d 2vw, #0F0F0F 80vw);
     }
 }
 
