@@ -13,7 +13,7 @@
         font-size: 20px;
     }
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         flex-direction: column-reverse;
         img {
             max-width: 400px;
@@ -31,7 +31,7 @@
     width: 80%;
     font-weight: 300;
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         width: 50%;
     }
 }

@@ -1,7 +1,7 @@
 main {
     background: radial-gradient(circle at 0% 0%, #75102d 2vw, #0F0F0F 22vw);
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         background: radial-gradient(circle at 10% 40%, #75102d 2vw, #0F0F0F 60vw);
     }
 }
@@ -16,7 +16,7 @@ main {
         margin-right: 20px;
     }
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         max-width: unset;
         margin-left: 0;
         margin-right: 0;

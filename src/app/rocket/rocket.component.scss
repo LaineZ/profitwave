@@ -10,7 +10,7 @@
     width: 100%;
     height: 100%;
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         background: url(../../assets/images/main-slide-rocket.png), radial-gradient(circle at 100% 100%, #75102d 2vw, #0F0F0F00 94vw);
         background-position: 100% 100%, 100%, 100%;
         background-repeat: no-repeat, no-repeat;
@@ -35,7 +35,7 @@
     width: 100%;
     height: 100%;
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         background: url(../../assets/images/main-slide-balls.png);
         background-position: 100% 100%;
         background-repeat: no-repeat;

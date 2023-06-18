@@ -4,7 +4,7 @@ main {
     background: radial-gradient(circle at 0% 100%, #75102d 2vw, #00000000 22vw);
     min-height: 1000px;
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         background: radial-gradient(circle at 50% 0%, #75102d 2vw, #00000000 50vw);
     }
 }
@@ -17,7 +17,7 @@ main {
         font-size: 56px;
     }
 
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         margin-bottom: 20%;
         h1 {
             font-size: 2em;
@@ -33,7 +33,7 @@ main {
 
     p {
         font-size: 20px;
-        @media (max-width: 1070px) {
+        @media (max-width: 900px) {
             margin-top: 0;
             font-size: unset;
         }
@@ -55,7 +55,7 @@ main {
 .steps {
     display: flex;
     margin-top: 30px;
-    @media (max-width: 1070px) {
+    @media (max-width: 900px) {
         flex-direction: column;
     }
 }
