@@ -6,15 +6,13 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./rocket.component.scss']
 })
 export class RocketComponent {
-  imageBallsX = 0;
-  imageBallsY = 0;
   imageRocketY = 0;
+  imageRocketX = 0;
 
   
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
     this.imageRocketY = event.clientY * 0.01;
-    this.imageBallsX = event.clientX * -0.02;
-    this.imageBallsY = event.clientY * -0.01;
+    this.imageRocketX = event.clientX * 0.01;
   }
 }

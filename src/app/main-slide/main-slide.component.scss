@@ -2,29 +2,24 @@
 
 main {
     height: 100vh;
-    min-height: 980px;
-    max-height: 1080px;
+    min-height: 1000px;
     position: relative;
     overflow: hidden;
 }
 
 h1 {
-    font-size: 64px;
-
-    @media (max-width: 1280px) {
-        font-size: 6vh;
-    }
-
-    @media (max-width: 700px) {
-        font-size: 35px;
-    }
+    font-size: min(max(20px, 3.5vw), 70px);
 }
 
 .description {
-    width: 60%;
     margin-bottom: 50px;
+    width: 80%;
     z-index: 4;
-    position: relative;
+
+
+    @media (max-width: 1400px) {
+        width: 80%;
+    }
 
     @media (max-width: 900px) {
         width: 100%;
@@ -40,6 +35,13 @@ h1 {
     }
 }
 
+.description p {
+    font-size: 20px;
+    @media (max-width: 1000px) {
+        font-size: unset;
+    }
+}
+
 .content {
     @include g.slide-container;
     margin-top: 40px;
@@ -50,21 +52,67 @@ h1 {
     }
 }
 
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 20vw;
+    height: 20vw;
+
+
+    @media (max-width: 1000px) {
+        transform: rotate(-45deg);
+    }
+}
+
+.bottom-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+
+    background-size: 60% auto, 100% 100%;
+
+    background-position: bottom right;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/images/main-slide-bottom.png");
+    
+
+    @media (max-width: 800px) {
+        background-size: 120vw auto, 100% 100%;
+        background-position: 50px 100%;
+    }
+    z-index: -1;
+}
+
 .button {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
     background-color: var(--accent);
     border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
     color: var(--fg);
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     transition: all 0.5s;
+
+    @media (max-width: 700px) {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 .button:visited {

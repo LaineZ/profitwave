@@ -14,7 +14,7 @@
 
     h1 {
         position: relative;
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 0;
 
         @media (max-width: 900px) {
@@ -40,6 +40,9 @@
 
     @media (max-width: 700px) {
         flex-direction: column;
+        h1:before {
+            display: none;
+        }
     }
 
     @media (max-width: 900px) {

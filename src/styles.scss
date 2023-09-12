@@ -41,7 +41,9 @@
 }
 
 body {
-    background-color: var(--bg);
+    background-image: url("assets/images/bg.jpg");
+    background-size: cover;
+    background-size: 50% auto;
     color: var(--fg);
     font-family: Montserrat, sans-serif;
     padding: 0;

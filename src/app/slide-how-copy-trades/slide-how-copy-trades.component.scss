@@ -1,12 +1,32 @@
 @use "../../styles.scss" as g;
 
 main {
-    background: radial-gradient(circle at 0% 100%, #75102d 2vw, #00000000 22vw);
+    background: url("/assets/images/slide-copy-trades.png"), radial-gradient(circle at 10% 50%, #75102d 2vw, #00000000 22vw);
+    background-position: -10vw 50%, left center;
+    background-size: 30% auto, 100% 100%;
+    background-repeat: no-repeat;
     min-height: 1000px;
 
     @media (max-width: 900px) {
-        background: radial-gradient(circle at 50% 0%, #75102d 2vw, #00000000 50vw);
+        background-position: -20vw 50%, left center;
+        background-size: 60% auto, 100% 100%;
     }
+}
+
+img {
+    width: 50%;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.arrow {
+    margin-top: 40px;
+    font-size: 200px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--accent);
 }
 
 .header-content {
@@ -33,7 +53,8 @@ main {
 .content {
     @include g.slide-container;
 
-    padding-top: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     p {
         font-size: 20px;
@@ -41,25 +62,6 @@ main {
             margin-top: 0;
             font-size: unset;
         }
-    }
-}
-
-.redirect {
-    background-image: url("../../assets/images/arrows.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 170px;
-
-    @media (max-width: 810px) {
-        font-size: 25px;
-        font-weight: bold;
-        height: 190px;
-    }
-
-    @media (max-width: 700px) {
-        font-size: 18px;
-        height: 220px;
     }
 }
 
