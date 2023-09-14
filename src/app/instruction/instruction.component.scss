@@ -8,11 +8,14 @@
 
     img {
         width: 100%;
+        align-self: center; /* Выравниваем изображение по центру по вертикали и горизонтали */
+        margin: auto; /* Центрируем изображение по горизонтали */
     }
 
     @media (max-width: 1070px) {
         flex-direction: column-reverse;
         font-size: 20px;
+        margin-right: unset;
     }
 }
 

@@ -1,6 +1,7 @@
 @use "../../styles.scss" as g;
 
 main {
+    position: relative; 
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -10,19 +11,13 @@ main {
 
 h1 {
     padding: 0;
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 50px;
 
     @media (max-width: 900px) {
         font-size: 30px;
     }
-}
-
-img {
-    width: 50%;
-    max-width: 300px;
-    display: block;
-    transition: all 100ms;
 }
 
 .image-left {
@@ -38,7 +33,7 @@ img {
 .content {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 1400px;
     text-align: center;
 
     p {
@@ -99,6 +94,56 @@ img {
     }
 
     transition: all 0.5s;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 20px;
+        margin-left: 30px;
+        display: block;
+        transition: all 100ms;
+    }
+}
+
+.content-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: url("/assets/images/review-reading.png"), radial-gradient(circle at 100% 100%, #75102d 2vw, rgba(0, 0, 0, 0) 30vw);
+    background-position: right bottom, left center;
+    background-size: 20% auto, 100% 100%;
+    background-repeat: no-repeat;
+
+    @media (max-width: 900px) {
+        background: url("/assets/images/review-reading.png"), radial-gradient(circle at 100% 100%, #75102d 2vw, rgba(0, 0, 0, 0) 100vw);
+        background-position: right bottom, left center;
+        background-size: 40% auto, 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    z-index: 1;
+}
+
+@media (max-width: 1280px) {
+    .reviews {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-count: 2;
+        align-items: flex-start;
+
+        img {
+            width: calc(50% - 10px);
+            margin: 10px;
+        }
+    }
 }
 
 .button:visited {
