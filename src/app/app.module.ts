@@ -16,6 +16,7 @@ import { OutlineButtonComponent } from './outline-button/outline-button.componen
 import { CryptoscrollComponent } from './cryptoscroll/cryptoscroll.component';
 import { FollowHeaderComponent } from './follow-header/follow-header.component';
 import { LineComponent } from './line/line.component';
+import { SlideFaqComponent } from './slide-faq/slide-faq.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { LineComponent } from './line/line.component';
     CryptoscrollComponent,
     FollowHeaderComponent,
     LineComponent,
+    SlideFaqComponent,
   ],
   imports: [
     BrowserModule
