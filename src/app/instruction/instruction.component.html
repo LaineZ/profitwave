@@ -2,6 +2,6 @@
     <img [src]="image">
     <div class="step-desc">
         <div class="step-ballon">{{ stepNumber }}</div>
-        <p>{{ stepDescription }}</p>
+        <p [innerHTML]="stepDescription"></p>
     </div>
 </div>

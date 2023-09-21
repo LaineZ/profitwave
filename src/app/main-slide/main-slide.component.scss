@@ -5,6 +5,10 @@ main {
     min-height: 1000px;
     position: relative;
     overflow: hidden;
+
+    @media (max-width: 500px) {
+        min-height: 800px;
+    }
 }
 
 h1 {
@@ -29,6 +33,7 @@ h1 {
     }
 
     @media (max-width: 800px) {
+        margin-bottom: unset;
         p {
             width: 100%;
         }
@@ -60,12 +65,18 @@ h1 {
 .heading img {
     max-width: 300px;
     max-height: 300px;
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
+    margin-left: -20px;
+
+    @media (max-width: 1200px) {
+        margin-left: -10px;
+    }
 
 
     @media (max-width: 1000px) {
         transform: rotate(-45deg);
+        margin-left: unset;
     }
 }
 
@@ -80,12 +91,13 @@ h1 {
     background-position: bottom right;
     top: 0;
     left: 0;
-    background-image: url("/assets/images/main-slide-bottom.png");
+    background-image: url("/assets/images/main-slide-bottom.webp");
     
 
     @media (max-width: 800px) {
         background-size: 120vw auto, 100% 100%;
         background-position: 50px 100%;
+        z-index: 1;
     }
     z-index: -1;
 }
@@ -102,7 +114,7 @@ h1 {
     padding-bottom: 20px;
     font-size: 30px;
     color: var(--fg);
-    font-family: Montserrat, sans-serif;
+    font-family: Gilroy, sans-serif;
     font-weight: bold;
     transition: all 0.5s;
 
