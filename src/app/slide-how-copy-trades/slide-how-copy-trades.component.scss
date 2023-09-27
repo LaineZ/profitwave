@@ -1,23 +1,28 @@
 @use "../../styles.scss" as g;
 
 main {
-    background: url("/assets/images/slide-copy-trades.png"), radial-gradient(circle at 20% 57%, #75102d 2vw, rgba(0, 0, 0, 0) 22vw);
+    background: url("/assets/images/slide-copy-trades.png"), radial-gradient(circle at -4% 57%, #75102d 3vw, rgba(0, 0, 0, 0) 50vw);
     background-position: -13vw 76%, -13vw 76%;
     background-size: 30% auto, 100% 100%;
     background-repeat: no-repeat;
     min-height: 1000px;
 
     @media (max-width: 900px) {
-        background-position: -20vw 50%, left center;
+        background-position: -28vw 58%, left center;
         background-size: 60% auto, 100% 100%;
     }
 }
 
 .logos {
+    width: 100%;
     max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
+
+    @media (max-width: 900px) {
+        max-width: 350px;
+    }
 }
 
 .arrow {
@@ -33,12 +38,7 @@ main {
     height: 15%;
 
     @media (max-width: 1070px) {
-        margin-top: 0;
-        width: 50%;
-        height: 50%;
-        transform: rotate(90deg);
-        margin-left: auto;
-        margin-right: auto;
+        display: none;
     }
 }
 
@@ -59,7 +59,7 @@ main {
     @media (max-width: 900px) {
         margin-bottom: 20%;
         h1 {
-            font-size: 2em;
+            font-size: 1.5em;
             margin-top: 0;
         }
     }

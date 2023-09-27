@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-instruction',
@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class InstructionComponent {
   @Input() image = "";
   @Input() stepNumber = 1;
+  @Input() first = false;
   @Input() stepDescription = "";
 }

@@ -8,15 +8,15 @@
             <h1>КОПИТРЕЙДИНГ С ИИ ПРЯМО В TELEGRAM? ВАУ! 🤯</h1>
         </div>
         <div class="steps">
-            <app-instruction [image]="'../../assets/images/step-one-screenshot.png'"
+            <app-instruction [first]="true" [image]="'../../assets/images/step-one-screenshot.png'"
                 [stepDescription]="'Найдите в поиске TG <strong>@profitwave_bot</strong> и начните переписку с ботом'"
                 [stepNumber]="1"></app-instruction>
             <img src="../../assets/images/arrow.png" class="arrow">
-            <app-instruction [image]="'../../assets/images/step-two-screenshot.png'"
+            <app-instruction [first]="false" [image]="'../../assets/images/step-two-screenshot.png'"
                 [stepDescription]="'Выберите биржу Binance или ByBit и соедените свой счет с ботом через API'"
                 [stepNumber]="2"></app-instruction>
             <img src="../../assets/images/arrow.png" class="arrow">
-            <app-instruction [image]="'../../assets/images/step-three-screenshot.png'"
+            <app-instruction [first]="false" [image]="'../../assets/images/step-three-screenshot.png'"
                 [stepDescription]="'Пополните свой фьючерсный счет на бирже и оплатите подписку в боте'"
                 [stepNumber]="3"></app-instruction>
         </div>
